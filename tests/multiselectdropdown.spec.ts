@@ -19,7 +19,7 @@ test("Multi select dropdown", async ({page})=>{
     const optionsText:string[] = (await dropdownOptions.allTextContents()).map(text => text.trim());
     console.log(optionsText);
 
-    expect(optionsText).toContain('Greem');
+    expect(optionsText).toContain('Green');
 
     //4) printing options from the dropdown
     for(const option of optionsText)
